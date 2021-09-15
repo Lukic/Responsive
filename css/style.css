@@ -1,3 +1,4 @@
+/*Global*/
 html {
   font-size: 62.5%;
 }
@@ -5,4 +6,170 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 9rem;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Layout */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  display: inline-block;
+  border: 2px solid rgb(255, 255, 255);
+  margin: 0 2em;
+  padding: 1em 2em;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  min-height: 400px;
+  margin: 0 auto;
+  background-color: rgb(122, 122, 122);
+}
+
+header a {
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 0.8em 1em;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main > article {
+  padding: 20px 40px;
+}
+
+/* Billede i artiklen */
+main article img {
+  width: 100%;
+}
+
+#latest-news {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgb(0, 0, 0);
+}
+
+#latest-news article {
+  min-width: 200px;
+  text-align: center;
+  margin: 0 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+#latest-news article img {
+  width: 100%;
+}
+
+#latest-news article p,
+#latest-news article h2 {
+  padding: 10px;
+  text-align: left;
+}
+
+#latest-news article a {
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 0.8em 1em;
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  height: 400px;
+  padding: 80px 40px;
+  margin: 0 auto;
+  background-color: rgb(204, 204, 204);
+}
+
+footer address {
+  font-size: 2rem;
+}
+
+footer address a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  nav ul li a {
+    font-size: 2rem;
+    margin: 0 1em;
+    padding: 0.5em 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    padding: 20px;
+    font-size: 5rem;
+  }
+
+  #latest-news {
+    flex-direction: column;
+  }
+  #latest-news article {
+    margin-bottom: 40px;
+  }
 }
